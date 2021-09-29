@@ -82,6 +82,10 @@
     bottom: 0;
     left: 0;
     right: 0;
+    background-color: #064E3B;
+    width: 50%;
+    margin: auto;
+    border-radius: 1rem;
   }
   
   footer p {
@@ -92,14 +96,13 @@
   .footer-list {
     margin: 1rem;
   }
-  
-  a,
-  img,
-  li {
-    display: inline;
+
+  .links {
+    text-decoration: none;
+    color: black;
   }
   
-  img {
-    width: 40px;
-    padding: 0.2rem;
+  a, li {
+    display: inline;
+    padding: 0.5rem;
   }
