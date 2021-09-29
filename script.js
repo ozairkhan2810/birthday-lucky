@@ -27,10 +27,14 @@ const showMessage = (message) => {
 checkButton.addEventListener("click", () => {
   const date = dateOfBirth.value;
   const numberToCheck = luckyNumber.value;
-  if (date && numberToCheck) {
+  if(luckyNumber.value < 0){
+    showMessage("Enter positive lucky number")
+  }
+  else if (date && numberToCheck) {
     const sumOfDate = calculateSum(date);
     checkIsNumberLucky(sumOfDate, numberToCheck);
-  } else {
+  }
+  else {
     showMessage("Please enter both the fields");
   }
 });
